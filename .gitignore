@@ -8,7 +8,8 @@
 css/*.css
 node_modules/
 Thumbs.db
-dist/
+gulp/
+src/
 bower_components
 package-lock.json
 .publish/
