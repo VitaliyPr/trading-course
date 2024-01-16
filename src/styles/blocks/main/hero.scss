@@ -1,0 +1,186 @@
+.hero {
+  // .hero__container
+  &__container {
+    position: relative;
+  }
+  // .hero__wrap
+  &__wrap {
+    position: relative;
+    padding-top: 2.2rem;
+    padding-bottom: 2.8rem;
+
+    @media (min-width: $md) and (max-width: $lg) {
+      padding-top: 5.3rem;
+      padding-bottom: 6.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media (min-width: $lg) {
+      padding-top: 17.8rem;
+      padding-bottom: 22.4rem;
+    }
+  }
+  // .hero__body
+  &__body {
+    position: relative;
+    z-index: 1;
+    @media (min-width: $md) and (max-width: $lg) {
+      max-width: 44.7rem;
+    }
+    @media (min-width: $lg) {
+      max-width: 72.2rem;
+    }
+  }
+  // .hero__title
+  &__title {
+    color: var(--white);
+    &:not(:last-child) {
+      margin-bottom: 2.1rem;
+    }
+
+    @media (min-width: $md) and (max-width: $lg) {
+      &:not(:last-child) {
+        margin-bottom: 3.5rem;
+      }
+    }
+
+    @media (min-width: $lg) {
+      &:not(:last-child) {
+        margin-bottom: 4.2rem;
+      }
+    }
+  }
+  // .hero__text
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 34.1rem;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+      &:not(:last-child) {
+        margin-bottom: 3.5rem;
+      }
+    }
+    @media (min-width: $lg) {
+      &:not(:last-child) {
+        margin-bottom: 4.2rem;
+      }
+    }
+  }
+  // .hero__btn
+  &__btn {
+  }
+  // .hero__image
+  &__image {
+    position: relative;
+    height: auto;
+    flex-shrink: 0;
+
+    @media (max-width: $md) {
+      position: absolute; 
+      left: 0;
+      bottom: 11.1rem;
+      width: 30.6rem;
+      height: 26rem;
+    }
+
+    @media (min-width: $md) and (max-width: $lg) {
+      width: calc(100% - 44.7rem);
+    }
+    @media (min-width: $lg) {
+      width: 62.6rem;
+      position: absolute;
+      right: 0;
+      top: 16.8rem;
+      z-index: 0;
+    }
+  }
+  // .hero__label
+  &__label {
+    display: inline-block;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 1rem 1.86rem 1rem 1.56rem;
+    transform: rotate(12deg);
+    border: 3px solid #5820ab;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0px 0px 68px 5px rgba(255, 255, 255, 0.05) inset, 0px 0px 4px 0px rgba(255, 255, 255, 0.15) inset;
+    backdrop-filter: blur(24px);
+    position: absolute;
+    right: 1.8rem;
+    top: -1.76rem;
+    z-index: 1;
+
+    @media (min-width: $lg) {
+      padding: 2rem 4.7rem 2rem 5.6rem;
+      top: -3rem;
+      right: 8.92rem;
+    }
+  }
+  // .hero__circle
+  &__circle {
+    position: absolute;
+    top: -1.7rem;
+    right: -4.5rem;
+    z-index: -1;
+    @media (min-width: $md) and (max-width: $lg) {
+      right: 4.3rem;
+      top: -2.5rem;
+    }
+    @media (min-width: $lg) {
+      right: 5.7rem;
+      top: -5.3rem;
+    }
+  }
+}
+.btn {
+  display: inline-block;
+  color: var(--white);
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 20px;
+  background: linear-gradient(92deg, #571fa6 -49.65%, rgba(87, 31, 166, 0) 106.08%);
+
+  @media (max-width: $md) {
+    width: 100%;
+    max-width: 32rem;
+    height: 6.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: $md) and (max-width: $lg) {
+    padding: 1.8rem 11.4rem;
+  }
+
+  @media (min-width: $lg) {
+    padding: 2.4rem 17.1rem;
+  }
+}
+.circle {
+  width: 17rem;
+  height: 17rem;
+  flex-shrink: 0;
+  border-radius: 17rem;
+  background: var(--copper-tan);
+  filter: blur(200px);
+
+  @media (min-width: $md) and (max-width: $lg) {
+    width: 25.4rem;
+    height: 25.4rem;
+    border-radius: 25.4rem;
+  }
+
+  @media (min-width: $lg) {
+    width: 34.4rem;
+    height: 34.4rem;
+    border-radius: 34.4rem;
+  }
+}

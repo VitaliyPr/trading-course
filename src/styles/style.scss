@@ -1,0 +1,14 @@
+@import "utils/_variables";
+@import "utils/_fonts";
+
+// Загальні стилі
+@import "blocks/_base";
+// @import "blocks/_header";
+// @import "blocks/_footer";
+// @import "blocks/_preloader";
+// @import "blocks/_menu";
+
+// Main
+@import "blocks/main/hero";
+@import "blocks/main/section";
+@import "blocks/main/lesson";
